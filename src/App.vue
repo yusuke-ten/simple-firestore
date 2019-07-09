@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FirestoreWrite/>
+    <FirestoreRead/>
+    <FirestoreObserve/>
+    <FirestoreUpdate/>
+    <FirestoreDelete/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FirestoreWrite from "./components/FirestoreWrite.vue";
+import FirestoreRead from "./components/FirestoreRead.vue";
+import FirestoreObserve from "./components/FirestoreObserve.vue";
+import FirestoreUpdate from "./components/FirestoreUpdate.vue";
+import FirestoreDelete from "./components/FirestoreDelete.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    FirestoreWrite,
+    FirestoreRead,
+    FirestoreObserve,
+    FirestoreUpdate,
+    FirestoreDelete
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+h1 {
+  margin: 10px auto;
 }
 </style>
